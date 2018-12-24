@@ -256,7 +256,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="qai-wa-0RD" kind="show" identifier="toCreateAccount" id="EUq-ZQ-dQh"/>
+                        <segue destination="qai-wa-0RD" kind="show" identifier="toCreateAccount" id="xSG-us-Loi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1SI-pW-VSn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -347,6 +347,9 @@
                                     <constraint firstAttribute="width" constant="250" id="TIM-26-Tr8"/>
                                 </constraints>
                                 <state key="normal" title="Create Account"/>
+                                <connections>
+                                    <action selector="createAccountPressed:" destination="qai-wa-0RD" eventType="touchUpInside" id="JDo-vQ-fAU"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create an account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSZ-rU-666">
                                 <rect key="frame" x="104" y="60" width="167" height="23"/>
@@ -362,6 +365,7 @@
                                 </state>
                                 <connections>
                                     <action selector="createAcountBtnPressed:" destination="hSc-lb-cJE" eventType="touchUpInside" id="4Og-h3-anh"/>
+                                    <action selector="pickBGPressed:" destination="qai-wa-0RD" eventType="touchUpInside" id="IJl-as-WjQ"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="Fnm-kN-ENV">
@@ -382,6 +386,7 @@
                                 </state>
                                 <connections>
                                     <action selector="createAcountBtnPressed:" destination="hSc-lb-cJE" eventType="touchUpInside" id="iNe-yJ-52z"/>
+                                    <action selector="pickAvatarPressed:" destination="qai-wa-0RD" eventType="touchUpInside" id="sYw-eH-0kr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -405,6 +410,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emailText" destination="Meu-7D-kEU" id="LQ3-hb-9bn"/>
+                        <outlet property="passText" destination="cYf-VP-aKb" id="njx-MR-9qb"/>
+                        <outlet property="pickAvatarPressed" destination="134-ux-CQn" id="dOO-rd-MYi"/>
+                        <outlet property="userImg" destination="Fnm-kN-ENV" id="8fM-OH-CnI"/>
+                        <outlet property="usernameText" destination="PeJ-b6-t8h" id="2Ks-Gh-o8Q"/>
                         <segue destination="TNC-Ca-BNQ" kind="unwind" identifier="unwindsegue" unwindAction="prepareforunwindWithSegue:" id="ZrL-Sf-gd0"/>
                     </connections>
                 </viewController>
