@@ -7,5 +7,7 @@ target 'Smack' do
 
   # Pods for Smack
 pod 'Alamofire', '~> 4.5.0'
+ pod 'SwiftyJSON', '~> 4.0'
+
 
 end
